@@ -2,7 +2,7 @@ from controller import LMSController
 from model.Book import Book
 from model.Member import Member
 
-# TO-DO: get data from excel sheets
+# storing initial data
 books = [Book("A234", "The 101 Dalmations"), Book("A675", "The 101 Dalmations"), Book("A212", "The 101 Dalmations"),
          Book("B671", "Charlie and the Chocolate Factory"), Book("B534", "Charlotte's Web"),
          Book("B777", "A Christmas Carol"),
@@ -41,13 +41,13 @@ if __name__ == '__main__':
             borrower_id = input(prompt)
             if not verify_borrower(borrower_id, members):
                 print(borrower_id + " is not a valid borrower.")
-                # fix this!!!
+                user_input = ""
                 continue
             prompt = "Please enter the book ID: "
             book_id = input(prompt)
             if not verify_book(book_id, books):
                 print("There is no such book " + book_id)
-                # fix this!!!
+                user_input = ""
                 continue
             LMSController.process_input(user_input, borrower_id, book_id, book_to_borrower_map)
         user_input = input(main_prompt)
