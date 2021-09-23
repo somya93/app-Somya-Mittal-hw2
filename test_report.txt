@@ -1,0 +1,86 @@
+Enter a database name:newdb
+Enter a command:reset
+Data has been reset
+Enter a command:books
+book_id 	 title 	 author 	 checked_out 	 borrower_id 	 borrower_name
+A234	The 101 Dalmations	Dodie Smith	N	None	None
+A675	The Adventures of Huckleberry Finn	Mark Twain	N	None	None
+A212	Bag of Bones	Stephen King	N	None	None
+B671	Charlie and the Chocolate Factory	Roald Dahl	N	None	None
+B534	Charlotte's Web	E.B.White	N	None	None
+B777	A Christmas Carol	Charles Dickens	N	None	None
+B778	Dracula	Bram Stoker	N	None	None
+B812	A Farewell to Arms	Ernest Hemingway	N	None	None
+C101	The Firm	John Grisham	N	None	None
+Enter a command:checkout
+Enter Borrower Id: L34
+Enter Book Id:A234
+'Andrea Selleck' has checked out 'The 101 Dalmations'
+Enter a command:checkout
+Enter Borrower Id: L34
+Enter Book Id:A675
+'Andrea Selleck' has checked out 'The Adventures of Huckleberry Finn'
+Enter a command:books
+book_id 	 title 	 author 	 checked_out 	 borrower_id 	 borrower_name
+A234	The 101 Dalmations	Dodie Smith	Y	L34	Andrea Selleck
+A675	The Adventures of Huckleberry Finn	Mark Twain	Y	L34	Andrea Selleck
+A212	Bag of Bones	Stephen King	N	None	None
+B671	Charlie and the Chocolate Factory	Roald Dahl	N	None	None
+B534	Charlotte's Web	E.B.White	N	None	None
+B777	A Christmas Carol	Charles Dickens	N	None	None
+B778	Dracula	Bram Stoker	N	None	None
+B812	A Farewell to Arms	Ernest Hemingway	N	None	None
+C101	The Firm	John Grisham	N	None	None
+Enter a command:checkout
+Enter Borrower Id: L84
+Enter Book Id:A111
+Book with Id A111 does not exist
+Enter a command:checkout
+Enter Borrower Id: L84
+Enter Book Id:C101
+'Ayesha Ford' has checked out 'The Firm'
+Enter a command:books
+book_id 	 title 	 author 	 checked_out 	 borrower_id 	 borrower_name
+A234	The 101 Dalmations	Dodie Smith	Y	L34	Andrea Selleck
+A675	The Adventures of Huckleberry Finn	Mark Twain	Y	L34	Andrea Selleck
+A212	Bag of Bones	Stephen King	N	None	None
+B671	Charlie and the Chocolate Factory	Roald Dahl	N	None	None
+B534	Charlotte's Web	E.B.White	N	None	None
+B777	A Christmas Carol	Charles Dickens	N	None	None
+B778	Dracula	Bram Stoker	N	None	None
+B812	A Farewell to Arms	Ernest Hemingway	N	None	None
+C101	The Firm	John Grisham	Y	L84	Ayesha Ford
+Enter a command:return
+Enter Borrower Id: L19
+Enter Book Id:Z111
+Book with Id Z111 does not exist
+Enter a command:return
+Enter Borrower Id: L34
+Enter Book Id:A234
+'Andrea Selleck' has returned 'The 101 Dalmations'
+Enter a command:books
+book_id 	 title 	 author 	 checked_out 	 borrower_id 	 borrower_name
+A234	The 101 Dalmations	Dodie Smith	N		
+A675	The Adventures of Huckleberry Finn	Mark Twain	Y	L34	Andrea Selleck
+A212	Bag of Bones	Stephen King	N	None	None
+B671	Charlie and the Chocolate Factory	Roald Dahl	N	None	None
+B534	Charlotte's Web	E.B.White	N	None	None
+B777	A Christmas Carol	Charles Dickens	N	None	None
+B778	Dracula	Bram Stoker	N	None	None
+B812	A Farewell to Arms	Ernest Hemingway	N	None	None
+C101	The Firm	John Grisham	Y	L84	Ayesha Ford
+Enter a command:reset
+Data has been reset
+Enter a command:books
+book_id 	 title 	 author 	 checked_out 	 borrower_id 	 borrower_name
+A234	The 101 Dalmations	Dodie Smith	N	None	None
+A675	The Adventures of Huckleberry Finn	Mark Twain	N	None	None
+A212	Bag of Bones	Stephen King	N	None	None
+B671	Charlie and the Chocolate Factory	Roald Dahl	N	None	None
+B534	Charlotte's Web	E.B.White	N	None	None
+B777	A Christmas Carol	Charles Dickens	N	None	None
+B778	Dracula	Bram Stoker	N	None	None
+B812	A Farewell to Arms	Ernest Hemingway	N	None	None
+C101	The Firm	John Grisham	N	None	None
+Enter a command:exit
+Exiting
