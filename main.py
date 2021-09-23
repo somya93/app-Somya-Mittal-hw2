@@ -70,14 +70,12 @@ def verify_book(book_id: str):
 if __name__ == '__main__':
     prompt = "Enter a database name:"
     database_name = input(prompt)
-    print(database_name)
     if database_name == "":
         database_name = "app-somyam"
     db_connection = connect(database_name)
 
     main_prompt = "Enter a command:"
     user_input = input(main_prompt)
-    print(user_input)
 
     while user_input != "exit":
         if user_input == "reset":
@@ -87,20 +85,17 @@ if __name__ == '__main__':
         if user_input == "checkout" or user_input == "return":
             prompt = "Enter Borrower Id: "
             borrower_id = input(prompt)
-            print(borrower_id)
             if not verify_borrower(borrower_id):
                 print("Borrower with Id " + borrower_id + " does not exist")
                 user_input = ""
                 continue
             prompt = "Enter Book Id:"
             book_id = input(prompt)
-            print(book_id)
             if not verify_book(book_id):
                 print("Book with Id " + book_id + " does not exist")
                 user_input = ""
                 continue
             LMSController.process_input(user_input, borrower_id, book_id)
         user_input = input(main_prompt)
-        print(user_input)
 
     print("Exiting")
